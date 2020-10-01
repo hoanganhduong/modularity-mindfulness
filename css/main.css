@@ -40,7 +40,6 @@ h1 {
   margin: 0;
   padding: 0 1rem;
   font-size: 2rem;
-  text-align: center;
 }
 
 header span {
@@ -73,9 +72,22 @@ nav a {
   text-align: center;
 }
 
+.section > p:first-child {
+  font-size: 2rem;
+}
+
 article {
   padding-right: .5rem;
   padding-left: .5rem;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 1.125rem;
 }
 
 .content {
@@ -109,12 +121,8 @@ footer {
 @media only screen and (min-width: 38em) {
 
   html {
-    font-size: 110%;
-    line-height: 1.4;
-  }
-
-  h1, p {
-    margin: 0 0 1.4rem;
+    font-size: 100%;
+    line-height: 1.5;
   }
 
   article {
@@ -127,7 +135,17 @@ footer {
     flex-direction: row;
   }
 
+  h1 {
+    align-items: flex-start;
+  }
+
   nav {
-    float: right;
+    align-items: flex-end;
+  }
+
+  .viewing, .gravel, .symbolism {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
