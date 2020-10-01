@@ -19,6 +19,7 @@ html {
 
 body {
   margin: 0;
+  padding: 1rem;
 }
 
 img {
@@ -27,10 +28,13 @@ img {
 }
 
 header {
+  padding-bottom: 1rem;
+}
+
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem .5rem;
 }
 
 h1 {
@@ -42,7 +46,7 @@ h1 {
   font-size: 2rem;
 }
 
-header span {
+.header span {
   font-size: 1.125rem;
 }
 
@@ -53,31 +57,50 @@ nav ul {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: inherit;
+  padding-bottom: 1rem;
 }
 
 nav a {
   font-size: 1.125rem;
   color: #3783a3;
-  padding-right: .5rem;
+  padding-right: 1rem;
+}
+
+nav > a:last-child {
+  padding-right: 0;
+}
+
+article {
+  padding-bottom: 1rem;
 }
 
 .section {
-  margin: 1rem auto;
-  padding: 1rem;
+  margin: .5rem auto;
+  padding: 0 1rem;
   border-bottom: solid .2rem #e2e2e2;
   border-top: solid .2rem #e2e2e2;
   max-width: 30em;
   text-align: center;
 }
 
-.section > p:first-child {
+.japanese {
   font-size: 2rem;
+  margin: 0;
+  padding: 1rem 0;
 }
 
-article {
-  padding-right: .5rem;
-  padding-left: .5rem;
+.english {
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+
+.viewing, .gravel, .symbolism {
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}
+
+article img {
+  padding-bottom: 1.5rem;
 }
 
 h2 {
@@ -88,13 +111,22 @@ h2 {
   font-size: 1.125rem;
 }
 
-.content {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+h2:first-child {
+  font-size: 1.5rem;
+}
+
+h2 span {
+  font-size: 1rem;
+}
+
+.content p {
+  margin: 0;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .button {
-  padding: 1rem;
+  padding: .5rem;
   border: solid .2rem #3783a3;
   border-radius: .3rem;
   color: #3783a3;
@@ -104,7 +136,10 @@ h2 {
 }
 
 footer {
+  border-top: solid .2rem #e2e2e2;
   padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 @media only screen and (min-width: 25em) {
