@@ -30,9 +30,9 @@ header {
   padding: 1rem;
   text-align: center;
 }
+
 h1, h2, h3 {
   margin: 0;
-
 }
 
 nav ul {
@@ -48,7 +48,7 @@ nav a {
   color: #3783a3;
 }
 
-.banner {
+.section {
   margin: 1rem;
   padding: 1rem;
   border-bottom: solid .2rem #e2e2e2;
@@ -59,7 +59,7 @@ nav a {
 
 article {
   padding-right: .5rem;
-  padding-left: .5rem
+  padding-left: .5rem;
 }
 
 .content {
@@ -97,14 +97,13 @@ footer {
     line-height: 1.4;
   }
 
-  h1,
-  p {
+  h1, p {
     margin: 0 0 1.4rem;
   }
 
   article {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
   }
 }
