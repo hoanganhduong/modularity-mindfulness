@@ -107,4 +107,21 @@ footer {
     grid-gap: 1rem;
   }
 
+  .header {
+    display: grid;
+    grid-template-columns: 2;
+    text-align: left;
+  }
+
+  h2 {
+    grid-row: 2;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .nav {
+    grid-column: 2;
+  }
 }
