@@ -162,6 +162,13 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
+    padding-top: .3rem;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
   }
 
   h1 {
@@ -177,4 +184,5 @@ footer {
     flex-direction: column;
     justify-content: space-between;
   }
+
 }
